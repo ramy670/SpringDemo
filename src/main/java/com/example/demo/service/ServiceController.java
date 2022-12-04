@@ -11,14 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-/*
+
 import com.example.demo.dao.BankRepo;
 import com.example.demo.model.Bank;
-*/
 
 @Controller
 public class ServiceController {
-	/*
+
 	@Autowired
 	private BankRepo repo;
 	
@@ -47,15 +46,15 @@ public class ServiceController {
 	public List<Bank> getBank(@RequestParam(value="bic", required=true) String bic) {
 		System.out.println("getBank");
 
-		return repo.getBankByBIC(bic);
+		return repo.getByBIC(bic);
 		
 	}
-*/
-	@RequestMapping("/test/")
+
+	@RequestMapping("/test")
 	@ResponseBody
 	public String getBank() {
 		System.out.println("Test");
-		return "Test";
+		return "Testsssssssssssss";
 		
 	}
 }

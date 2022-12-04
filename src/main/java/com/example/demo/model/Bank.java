@@ -41,12 +41,12 @@ public class Bank {
 		return country;
 	}
 	public void setCountry(String country) {
-		country = country;
+		this.country = country;
 	}
 	public String getBIC() {
 		return BIC;
 	}
 	public void setBIC(String bIC) {
-		BIC = bIC;
+		this.BIC = bIC;
 	}
 }
