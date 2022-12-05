@@ -22,9 +22,14 @@ public class Bank {
 		this.name = name;
 		this.state = state;
 		this.country = country;
-		BIC = bIC;
+		this.BIC = bIC;
 	}
 	
+	@Override
+	public String toString() {
+		return "Bank [id=" + id + ", name=" + name + ", state=" + state + ", country=" + country + ", BIC=" + BIC + "]";
+	}
+
 	public String getName() {
 		return name;
 	}
